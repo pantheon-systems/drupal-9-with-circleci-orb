@@ -1,0 +1,14 @@
+uuid: 5ac6260e-207f-4b69-906a-d9d710da27bc
+name: drupal-9-with-pantheon-orb
+mail: steve.persch@pantheon.io
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
