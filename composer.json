@@ -57,6 +57,9 @@
             }
         }
     },
+    "scripts": {
+        "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon"
+    },
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
