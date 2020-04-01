@@ -43,6 +43,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
+        "prepare-for-pantheon": "DrupalProject\\composer\\ScriptHandler::prepareForPantheon",
         "drupal-scaffold": {
             "allowed-packages": [
                 "pantheon-systems/drupal-integrations"
@@ -55,6 +56,11 @@
                 "[project-root]/pantheon.upstream.yml": false
             }
         }
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
     },
     "config": {
         "optimize-autoloader": true,
