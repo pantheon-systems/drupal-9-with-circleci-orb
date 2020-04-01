@@ -20,7 +20,6 @@ workflows:
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" cr
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
 
-
 orbs:
   cypress: cypress-io/cypress@1
   playground: fauxalgore/playground@0.0.2
