@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-upstreams/drupal-project",
+    "name": "stevector/drupal-9-with-pantheon-orb",
     "description": "Install Drupal 9 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
