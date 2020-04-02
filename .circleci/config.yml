@@ -21,10 +21,10 @@ workflows:
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" cr
             - run: 
                 command: |
-                # If exported configuration is available, then import it.
-                if [ -f "config/system.site.yml" ] ; then
-                  terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
-                fi
+                  # If exported configuration is available, then import it.
+                  if [ -f "config/system.site.yml" ] ; then
+                    terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- config-import --yes
+                  fi
 
 orbs:
   cypress: cypress-io/cypress@1
