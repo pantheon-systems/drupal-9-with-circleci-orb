@@ -1,9 +1,11 @@
-# Composer-enabled Upstream template
-## Experimental
+# Experimental Repo For Running Drupal 9 with Pantheon's Build Tools and CircleCI Orb
 
-This is Pantheon's recommended starting point for forking new upstreams that work with the Platform's integrated
-Composer build process.
+This repository is a stripped down version of the fuller [pantheon-systems/example-drops-8-composer](https://github.com/pantheon-systems/example-drops-8-composer) which shows how Drupal 8 can be run on Pantheon with various git hosts and CI services using [Pantheon's Build Tools](https://pantheon.io/docs/guides/build-tools). This repo shows only GitHub + Pantheon and uses Build Tools wrapped in [Pantheon CircleCI Orb](https://github.com/pantheon-systems/circleci-orb).
 
-Because it is under active development, you should not create permanent/production sites using this repository
-yet. We make no guarantees of backwards compatibility. Merging new updates from this repository may break existing
-sites.
+At this point this repository is meant for experimentation only.
+
+To create a copy of this repository including a separate GitHub repo, a CircleCI configuration, and a Pantheon sandbox, run:
+
+```
+terminus build:project:create --team='StevePersch' stevector/drupal-9-with-pantheon-orb d9-build-tools-1  --stability=dev
+```
