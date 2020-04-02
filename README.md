@@ -7,5 +7,5 @@ At this point this repository is meant for experimentation only.
 To create a copy of this repository including a separate GitHub repo, a CircleCI configuration, and a Pantheon sandbox, run:
 
 ```
-terminus build:project:create --team='StevePersch' stevector/drupal-9-with-pantheon-orb d9-build-tools-1  --stability=dev
+terminus build:project:create stevector/drupal-9-with-pantheon-orb machine-name-for-new-site --stability=dev --team='optional-pantheon-organization-name' 
 ```
