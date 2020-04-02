@@ -5,7 +5,6 @@ workflows:
     jobs:
       - pantheon/push:
           checkout: false
-          terminus_clone_env: dev
           pre-steps:
             - checkout
             - playground/composer_install_no_dev
