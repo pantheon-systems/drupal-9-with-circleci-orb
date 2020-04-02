@@ -4,8 +4,22 @@ This repository is a stripped down version of the fuller [pantheon-systems/examp
 
 At this point this repository is meant for experimentation only.
 
-To create a copy of this repository including a separate GitHub repo, a CircleCI configuration, and a Pantheon sandbox, run:
+To create a copy of this repository including a separate GitHub repo, a CircleCI configuration, and a Pantheon sandbox, run this command. Be sure to replace `machine-name-for-new-site` with a machine name of your choice.
 
 ```
 terminus build:project:create stevector/drupal-9-with-pantheon-orb machine-name-for-new-site --stability=dev --team='optional-pantheon-organization-name' 
+```
+
+After that command completes, verify that Drupal 9 has been installed in the Pantheon Dev environment by visiting it in your browser. this command will get you a one-time log in link that that environment. Be sure to replace `machine-name-for-new-site` with the machine name you chose above.
+
+```
+terminus drush machine-name-for-new-site.dev  -- user-login
+```
+
+Next, deploy to the Pantheon Test and Live environments. When pull requests are created on your GitHub repo they will generate Multidev environments on Pantheon that clone the database and files from the Live environment. Be sure to replace `machine-name-for-new-site` with the machine name you chose above.
+
+
+```
+terminus env:deploy machine-name-for-new-site.test
+terminus env:deploy machine-name-for-new-site.live
 ```
