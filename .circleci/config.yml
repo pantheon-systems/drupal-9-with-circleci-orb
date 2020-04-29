@@ -7,13 +7,9 @@ workflows:
           checkout: false
           pre-steps:
             - checkout
-            - playground/composer_install_no_dev
+            - run: composer -n install --optimize-autoloader --ignore-platform-reqs --no-dev
             - run: composer prepare-for-pantheon
-            - run: cat .gitignore
-            - run: git status
           post-steps:
-            - run: cd "/tmp/pantheon_repo" && git status
-            - run: echo "testing CI on master branch"
             # These commands should be called from Quicksilver.
             # https://github.com/pantheon-systems/quicksilver-examples/
             - run: terminus -n drush "$TERMINUS_SITE.$TERMINUS_ENV" -- updatedb -y
@@ -26,6 +22,4 @@ workflows:
                   fi
 
 orbs:
-  cypress: cypress-io/cypress@1
-  playground: fauxalgore/playground@0.0.2
   pantheon: pantheon-systems/pantheon@0.2.0
