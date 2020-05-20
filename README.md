@@ -7,7 +7,7 @@ At this point this repository is meant for experimentation only.
 To create a copy of this repository including a separate GitHub repo, a CircleCI configuration, and a Pantheon sandbox, run this command. Be sure to replace `machine-name-for-new-site` with a machine name of your choice.
 
 ```
-terminus build:project:create stevector/drupal-9-with-pantheon-orb machine-name-for-new-site --stability=dev --team='optional-pantheon-organization-name' 
+terminus build:project:create "pantheon-systems/drupal-9-with-circleci-orb:dev-master" machine-name-for-new-site --stability=dev --team='optional-pantheon-organization-name' 
 ```
 
 After that command completes, verify that Drupal 9 has been installed in the Pantheon Dev environment by visiting it in your browser. this command will get you a one-time log in link that that environment. Be sure to replace `machine-name-for-new-site` with the machine name you chose above.
