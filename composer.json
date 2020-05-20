@@ -1,6 +1,6 @@
 {
-    "name": "stevector/drupal-9-with-pantheon-orb",
-    "description": "Install Drupal 9 with Composer on Pantheon.",
+    "name": "pantheon-systems/drupal-9-with-circleci-orb",
+    "description": "Install Drupal 9 with Composer on Pantheon using CI.",
     "type": "project",
     "license": "MIT",
     "repositories": [
