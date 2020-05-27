@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c176f0f22f52bc6cdeb95985cef92935",
+    "content-hash": "78752c96220fcf2ebf6da34790137b5d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1259,16 +1259,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.0.0-beta3",
+            "version": "9.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "084a8705f4169a95366eea1451012c81ca2cd500"
+                "reference": "b97eebe9799d323f3dc0a5c372b341de57bbc7d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/084a8705f4169a95366eea1451012c81ca2cd500",
-                "reference": "084a8705f4169a95366eea1451012c81ca2cd500",
+                "url": "https://api.github.com/repos/drupal/core/zipball/b97eebe9799d323f3dc0a5c372b341de57bbc7d4",
+                "reference": "b97eebe9799d323f3dc0a5c372b341de57bbc7d4",
                 "shasum": ""
             },
             "require": {
@@ -1460,7 +1460,6 @@
                     }
                 },
                 "patches_applied": {
-                    "install failure": "https://raw.githubusercontent.com/stevector/drupal-9-project/master/patches/issue-1--core-install-error.patch",
                     "db version": "https://raw.githubusercontent.com/stevector/drupal-9-project/master/patches/issue-2--mariadb-version.patch"
                 }
             },
@@ -1503,7 +1502,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2020-05-15T23:57:43+00:00"
+            "time": "2020-05-22T22:32:46+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -1554,16 +1553,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.0.0-beta3",
+            "version": "9.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "70d87ea98276093b045bf29fbcb3185128f23a45"
+                "reference": "9c37adc137e9247090578f7b4ad46acca17acdc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/70d87ea98276093b045bf29fbcb3185128f23a45",
-                "reference": "70d87ea98276093b045bf29fbcb3185128f23a45",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/9c37adc137e9247090578f7b4ad46acca17acdc0",
+                "reference": "9c37adc137e9247090578f7b4ad46acca17acdc0",
                 "shasum": ""
             },
             "require": {
@@ -1572,7 +1571,7 @@
                 "doctrine/annotations": "1.10.2",
                 "doctrine/lexer": "1.2.0",
                 "doctrine/reflection": "1.2.1",
-                "drupal/core": "9.0.0-beta3",
+                "drupal/core": "9.0.0-rc1",
                 "egulias/email-validator": "2.1.17",
                 "guzzlehttp/guzzle": "6.5.3",
                 "guzzlehttp/promises": "v1.3.1",
@@ -1631,7 +1630,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "time": "2020-05-15T23:57:43+00:00"
+            "time": "2020-05-22T22:32:46+00:00"
         },
         {
             "name": "drush/drush",
