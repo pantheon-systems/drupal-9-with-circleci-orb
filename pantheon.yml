@@ -1,7 +1,16 @@
 api_version: 1
 web_docroot: true
+php_version: 7.4
+
+# See https://pantheon.io/docs/pantheon-yml#specify-a-version-of-mariadb
+database:
+  version: 10.4
+
+# See https://pantheon.io/docs/pantheon-yml/#enforce-https--hsts for valid values.
 enforce_https: transitional
-php_version: 7.3
-drush_version: 10
+
+# See https://pantheon.io/docs/pantheon-yml#protected-web-paths for usage.
 protected_web_paths:
-  - /private
+  - /private/
+  - /sites/default/files/private/
+  - /sites/default/files/config/
